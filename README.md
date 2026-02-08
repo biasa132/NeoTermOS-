@@ -15,6 +15,6 @@ multi-user, virtual filesystem, dan package manager sendiri.
 ## 📦 Install (Termux)
 ```bash
 pkg install git python -y
-git clone https://github.com/USERNAME/NeoTermOS
+git clone https://github.com/biasa132/NeoTermOS
 cd NeoTermOS
 python main.py
