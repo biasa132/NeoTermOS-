@@ -1,0 +1,13 @@
+{
+  "name": "ubuntu-main",
+  "base": "https://archive.ubuntu.com/ubuntu",
+  "dists": "jammy",
+  "components": [
+    "main",
+    "universe"
+  ],
+  "packages": "/data/data/com.termux/files/home/NeoTermOS/repos/ubuntu-main.gz",
+  "dist": "jammy",
+  "component": "main",
+  "arch": "arm64"
+}

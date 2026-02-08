@@ -1,0 +1,19 @@
+vim-youcompleteme
+-----------------
+
+A code completion plugin for Vim. This package designed to work with
+vim-addon-manager. To use this addon install vim-addon-manager package first
+and use this command:
+
+  $ vam install youcompleteme
+
+This plugin is not compatible with any other code competition plugins, some
+of them listed below:
+
+  * clang_complete
+  * AutoComplPop
+  * Supertab
+  * neocomplcache
+  * jedi-vim (vim-python-jedi package in Debian)
+
+It is not recommended to use them together.

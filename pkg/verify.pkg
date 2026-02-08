@@ -1,0 +1,19 @@
+import hashlib
+import os
+
+def verify_file(file_path, expected_sha256):
+    if not os.path.exists(file_path):
+        print(f"[VERIFY] File {file_path} not found")
+        return False
+
+    h = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            h.update(chunk)
+    file_hash = h.hexdigest()
+    if file_hash.lower() == expected_sha256.lower():
+        print(f"[VERIFY] {os.path.basename(file_path)} verified ✅")
+        return True
+    else:
+        print(f"[VERIFY] {os.path.basename(file_path)} verification FAILED ❌")
+        return False

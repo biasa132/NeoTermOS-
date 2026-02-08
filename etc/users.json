@@ -1,0 +1,31 @@
+{
+  "root": {
+    "username": "root",
+    "password": "root",
+    "uuid": "0",
+    "uid": 0,
+    "gid": 0,
+    "groups": [
+      "root"
+    ],
+    "role": "root",
+    "home": "/",
+    "shell": "/bin/neosh",
+    "umask": "022"
+  },
+  "alfi": {
+    "username": "alfi",
+    "password": "alfi",
+    "uuid": "f92c2b0a-a4f7-464b-9625-85c7503bc1fd",
+    "uid": 1,
+    "gid": 1,
+    "groups": [
+      "alfi",
+      "dev"
+    ],
+    "role": "user",
+    "home": "/home/alfi",
+    "shell": "/bin/neosh",
+    "umask": "022"
+  }
+}

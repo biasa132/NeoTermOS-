@@ -1,0 +1,11 @@
+{
+  "/": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0755"
+  },
+  "/home/alfi": {
+    "uid": "alfi",
+    "mode": "rwx"
+  }
+}

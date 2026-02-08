@@ -1,0 +1,8 @@
+{
+  "name": "ports.ubuntu.com_ubuntu-ports",
+  "base": "https://ports.ubuntu.com/ubuntu-ports",
+  "dist": "jammy",
+  "arch": "arm64",
+  "component": "universe",
+  "packages": "/data/data/com.termux/files/home/NeoTermOS/repos/ports.ubuntu.com_ubuntu-ports.Packages.gz"
+}

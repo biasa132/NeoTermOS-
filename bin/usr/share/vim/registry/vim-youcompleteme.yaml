@@ -1,0 +1,7 @@
+addon: youcompleteme
+description: fast, as-you-type, fuzzy-search code completion engine
+basedir: /usr/share/vim-youcompleteme
+files:
+  - autoload/youcompleteme.vim
+  - doc/youcompleteme.txt
+  - plugin/youcompleteme.vim

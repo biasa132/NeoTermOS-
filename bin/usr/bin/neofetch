@@ -1,0 +1,30 @@
+#!/bin/bash
+# NeoTermOS neofetch ultimate - Neo logo safe
+
+cat << "EOF"
+ _   _ ______ 
+| \ | |  _  |
+|  \| | | | |
+| . ` | | | |
+| |\  | |/ / 
+\_| \_|\___/
+EOF
+
+echo
+echo "OS: NeoTermOS"
+echo "Host: $(uname -n)"
+echo "Kernel: $(uname -r)"
+echo "Shell: $SHELL"
+echo "CPU: $(nproc) cores"
+
+# Memory safe for Termux
+if [ -f /proc/meminfo ]; then
+    total=$(grep MemTotal /proc/meminfo | awk '{print $2}')
+    avail=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
+    used=$((total - avail))
+    echo "Memory: $((used/1024))MiB / $((total/1024))MiB"
+else
+    echo "Memory: Unknown"
+fi
+
+echo
